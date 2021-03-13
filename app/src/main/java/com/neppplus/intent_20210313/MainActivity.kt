@@ -18,7 +18,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(myIntent)
         }
 
-
         moveToSecondBtn.setOnClickListener {
 
 //            어떤 내용이 적혔는지?
@@ -35,6 +34,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(myIntent)
 
         }
+
+        editNickBtn.setOnClickListener {
+
+            val myIntent = Intent(this, EditNicknameActivity::class.java)
+
+        }
+
 
 
     }
