@@ -14,7 +14,7 @@ class EditNicknameActivity : AppCompatActivity() {
 //        확인 버튼이 눌리면 => 입력한 새 닉네임을 가지고 복귀
         okBtn.setOnClickListener {
 
-//            입력한 닉네이을 추출 (변수 저장)
+//            입력한 닉네임을 추출 (변수 저장)
             val inputNewNickname = nicknameEdt.text.toString()
 
 //            닉네임을 담아주자
