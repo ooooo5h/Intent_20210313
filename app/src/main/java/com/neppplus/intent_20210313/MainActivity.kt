@@ -5,6 +5,7 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_edit_nickname.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -74,7 +75,19 @@ class MainActivity : AppCompatActivity() {
 
 
 
+        naverBtn.setOnClickListener {
+            val myUri = Uri.parse("http://naver.com" ) //인터넷주소
+            val myIntent = Intent(Intent.ACTION_VIEW, myUri)
+            startActivity(myIntent)
 
+        }
+
+        kakaoStoreBtn.setOnClickListener {
+            val myUri = Uri.parse("market://details?id=com.kakao.talk" ) //스토어 상세 주소
+            val myIntent = Intent(Intent.ACTION_VIEW, myUri)
+            startActivity(myIntent)
+
+        }
 
 
 
