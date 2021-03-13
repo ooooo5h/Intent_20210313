@@ -5,18 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
-    tools:context=".MySecondActivity">
-
+    android:padding="20dp"
+    tools:context=".EditNicknameActivity">
 
     <TextView
-        android:id="@+id/messageTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="전달 받은 문구가 나올 자리"
-        android:textSize="17sp"/>
+        android:text="새 닉네임 입력" />
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="한글 입력도 가능합니다"
+        android:singleLine="true"/>
 
-
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="확인" />
 
 </LinearLayout>
